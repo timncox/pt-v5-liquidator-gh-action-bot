@@ -1,5 +1,7 @@
 # PoolTogether v5 Liquidator Bot - GitHub Actions
 
+### DISCLAIMER: These bots are meant for intermediates & experts to run and modify to their liking. There is a lot of prerequisite knowledge about blockchains, private keys, swaps, and GitHub infrastructure that should be known before running a bot. If anyone ever asks you for your private key _do not give it to them_. Nobody from Generation Software, Pooltime, or PoolTogether will ever ask you for your private key.
+
 This repo contains two simple scripts ([index.ts](/index.ts) and [.github/workflows/cron.yml](/.github/workflows/cron.yml)) to run the Generation Software PoolTogether v5 Liquidator bot using GitHub Actions.
 
 You can simply fork this repo, enter your own custom environment variables in your newly-forked GitHub Repository's Settings (`Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`), and enable automated workflow runs.
@@ -14,9 +16,9 @@ You can simply fork this repo, enter your own custom environment variables in yo
 
 ### Installation:
 
-[<img src="https://github.com/GenerationSoftware/pt-v5-liquidator-gh-action-bot/blob/main/images/video-thumb.jpg" width="50%">](https://www.youtube.com/watch?v=RmJySyZsHNc "Watch the 1-minute installation video")
+[<img src="https://github.com/GenerationSoftware/pt-v5-liquidator-gh-action-bot/blob/main/images/video-thumb--new.jpg" width="50%">](https://www.youtube.com/watch?v=Dt-ibfZH-LU "Watch the 1-minute installation video")
 
-[Watch the 1-minute video](https://www.youtube.com/watch?v=RmJySyZsHNc), or:
+[Watch the 1-minute video](https://www.youtube.com/watch?v=Dt-ibfZH-LU), or:
 
 1. [Fork this repository](#user-content-1-fork-this-repository)
 2. [Set your environment variables](#user-content-2-set-your-environment-variables)
@@ -52,7 +54,7 @@ Once the repository has been forked you can update your `Secrets` (under `Settin
 
 > <kbd><img src="https://github.com/GenerationSoftware/pt-v5-liquidator-gh-action-bot/blob/main/images/screenshot-settings-2-jsonrpc.jpg?raw=true" /></kbd>
 
-`JSON_RPC_URL`: We will need JSON_RPC_URLs for each network you want to use. The following are required for each network you want the bot to run against: `BASE_MAINNET_JSON_RPC_URL`, `ARBITRUM_MAINNET_JSON_RPC_URL`, `OPTIMISM_MAINNET_JSON_RPC_URL`.
+`JSON_RPC_URL`: We will need JSON_RPC_URLs for each network you want to use. The following are required for each network you want the bot to run against: `ETHEREUM_MAINNET_JSON_RPC_URL`, `BASE_MAINNET_JSON_RPC_URL`, `ARBITRUM_MAINNET_JSON_RPC_URL`, `OPTIMISM_MAINNET_JSON_RPC_URL`, `SCROLL_MAINNET_JSON_RPC_URL`, `GNOSIS_MAINNET_JSON_RPC_URL`.
 
 > <kbd>
 <img src="https://github.com/GenerationSoftware/pt-v5-liquidator-gh-action-bot/blob/main/images/screenshot-settings-4-privkey.jpg?raw=true" />
